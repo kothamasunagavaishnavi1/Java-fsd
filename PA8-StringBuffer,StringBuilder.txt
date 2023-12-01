@@ -1,0 +1,57 @@
+public class StringBufferEx1
+{
+ 
+public static void main(String arg[])
+ {
+   StringBuffer sb1 = new StringBuffer();
+   StringBuffer sb2 = new StringBuffer("Hello World");
+   sb2.reverse();
+   System.out.println(sb1.capacity());
+   sb1.appened("HI");
+   System.out.println(sb1.capacity());
+   sb1.appened("Green is my favourite colour");
+   System.out.println(sb2.capacity());
+   System.out.println(sb2);
+ }
+}
+
+   
+
+
+----------------------------------------------------------------------------------------------------
+public class StringBuilderEx2
+{
+
+public static void main(String[] args)
+ {
+
+    StringBuilder sb1 = new StringBuilder("Happy mothers day");
+    String day = "Happy mothers day";
+    StringBuilder sb2 = new StringBuilder(day);
+
+    System.out.println(sb1.charAt(7));
+
+    if(sb2.equals(sb1))
+    {
+       System.out.println("sb1, sb2 are equal");
+    }
+    else
+    {
+       System.out.println("sb1, sb2 are not equal");
+    }
+
+       sb1.append(" my relatives");
+       System.out.println(sb1);
+
+       sb1.replace(sb1.lastIndexOf(" "), sb1.lastIndexOf("")+1, " friends");
+       System.out.println(sb1);
+
+       System.out.println(sb1.capacity());
+
+       System.out.println(sb1.reverse());
+
+       String substr = sb2.substring(sb2.indexOf("f"), sb2.indexOf("s")+1);
+       System.out.println(substr);
+
+  }
+}

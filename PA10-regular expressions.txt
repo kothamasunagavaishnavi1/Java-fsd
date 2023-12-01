@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class regex
+ {
+
+	public static void main(String[] args) 
+       {
+		 
+		
+	Pattern a =Pattern.compile("a[1207]");
+	Matcher b = a.matcher("a1a2a0a7");
+	while(b.find())
+        System.out.println(b.start()+","+b.end());
+	
+	}
+}

@@ -1,0 +1,13 @@
+public class TypeCastingExample {
+    public static void main(String[] args) {
+        // Implicit type casting (Widening)
+        int intValue = 10;
+        double doubleValue = intValue; // Automatically converts int to double
+        System.out.println("Implicit (Widening) Type Casting: " + doubleValue);
+
+        // Explicit type casting (Narrowing)
+        double anotherDoubleValue = 15.75;
+        int anotherIntValue = (int) anotherDoubleValue; // Manually converts double to int
+        System.out.println("Explicit (Narrowing) Type Casting: " + anotherIntValue);
+    }
+}

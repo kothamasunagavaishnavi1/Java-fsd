@@ -1,0 +1,16 @@
+import java.util.HashMap;
+
+public class Map
+{
+    public static void main(String[] args) 
+         {
+		HashMap m=new HashMap();
+		System.out.println(m.put("B",100));
+		System.out.println(m.put("B",200));
+                System.out.println(m.put("B",300));
+                System.out.println(m.put("B",400));
+
+		System.out.println(("size="+m.size()));
+		System.out.println(m.get("B"));
+	  }
+ }

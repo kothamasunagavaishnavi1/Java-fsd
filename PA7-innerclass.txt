@@ -1,0 +1,28 @@
+import java.io.*;
+
+// Class 1
+// Outer class
+class Outer {
+
+	// Static inner class
+	static class Inner {
+
+		// Inner class member variable
+		int num = 10;
+	}
+}
+
+// Class 2
+// Main class
+class Main {
+
+	// Main driver method
+	public static void main(String[] args)
+	{
+
+		// Inner class object
+		Outer.Inner obj2 = new Outer.Inner();
+
+		System.out.println("Value of inner class method:" + obj2.num);
+	}
+}

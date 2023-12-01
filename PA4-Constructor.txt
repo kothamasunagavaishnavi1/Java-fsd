@@ -1,0 +1,28 @@
+class A
+{
+	 
+	public A()
+	  {
+		  System.out.println("NO ARGUMENT CONSTRUCTOR");
+	  }
+	  public A(int c)
+          {
+		  System.out.println(c);
+	  }
+}
+public class Constructors 
+{
+
+	 public static void main(String[] args) 
+   {
+		
+		A a1=new A();
+		int c=10;
+                
+          System.out.println("ARGUMENT CONSTRUCTOR");
+                A a2=new A(10);
+		  
+		 
+   }
+
+}

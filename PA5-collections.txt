@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class CollectionsEx1 
+{
+    public static void main(String[] args) 
+  {
+        ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+        
+        
+        myArrayList.add(40);
+        myArrayList.add(50);
+        myArrayList.add(90);
+        myArrayList.add(50); //adding a duplicate number
+        
+      
+        System.out.println("The ArrayList are:");
+        for (int number : myArrayList) 
+        {
+            System.out.println(number);
+        }
+        
+        // Create a HashSet to store strings
+        HashSet<String> myHashSet = new HashSet<String>();
+       
+        myHashSet.add("Vaishnavi");
+        myHashSet.add("Satvika");
+        myHashSet.add("Suma");
+        myHashSet.add("Vaishnavi"); // Adding a duplicate element
+        
+        System.out.println("The contents of the HashSet are:");
+        for (String Names : myHashSet) 
+        {
+            System.out.println(Names);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+//Default
+
+class Default 
+{
+ public static void main(String[] args) 
+ {
+	
+	 System.out.println("Defualt modifier");
+	 
+ }
+}
+
+--------------------------------------------------------------------
+//Private 
+
+class PrivateAccess
+ {
+	private void display()
+	{
+		System.out.println( "Private modifier");
+	}
+ }
+        public class Modifier 
+        {
+          public static void main(String[] args)
+           {
+	     System.out.println("public");
+	     PrivateAccess p = new PrivateAccess();
+	 
+           }
+	
+        }
+---------------------------------------------------------------------
+//Protected 
+
+package P1
+ public class ModProtect{
+	
+	protected void display() 
+    { 
+        System.out.println("This is a protected access specifier"); 
+    } 
+}
+
+package P2;
+
+import P1.ModProtect;
+
+public class Mod extends ModProtect
+ {
+
+      public static void main(String[] args)
+       {
+	  Mod P = new Mod ();   
+          P.display();  
+       }
+
+}
+
+-------------------------------------------------------
+//Public 
+
+package P1;
+
+ public class ModProtect
+{
+	
+	public void display() 
+         { 
+          System.out.println("This is a public access specifier"); 
+         } 
+}
+
+
+package P2;
+
+import P1.ModProtect;
+
+public class Pub  
+{
+     public static void main(String[] args) 
+        {
+	  ModProtect p = new ModProtect ();   
+		  p.display();  
+        }
+
+	private void display() 
+			
+			
+ }
+
+
+
+
+
+
+
+
+	 
+
